@@ -128,8 +128,13 @@ public class RobotContainer {
         drivetrain.setDefaultCommand(
         drivetrain.applyRequest(() ->
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         drive.withVelocityX(applyJoystickCurve((-joystick.getLeftY()) * (MaxSpeed/3)))
              .withVelocityY(applyJoystickCurve((-joystick.getLeftX()) * (MaxSpeed/3)))
+=======
+        drive.withVelocityX(applyJoystickCurve(-joystick.getLeftY()) * (MaxSpeed/2))
+             .withVelocityY(applyJoystickCurve(-joystick.getLeftX()) * (MaxSpeed/2))
+>>>>>>> Stashed changes
 =======
         drive.withVelocityX(applyJoystickCurve(-joystick.getLeftY()) * (MaxSpeed/2))
              .withVelocityY(applyJoystickCurve(-joystick.getLeftX()) * (MaxSpeed/2))
