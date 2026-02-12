@@ -127,8 +127,13 @@ public class RobotContainer {
     private void configureBindings() {
         drivetrain.setDefaultCommand(
         drivetrain.applyRequest(() ->
+<<<<<<< Updated upstream
         drive.withVelocityX(applyJoystickCurve((-joystick.getLeftY()) * (MaxSpeed/3)))
              .withVelocityY(applyJoystickCurve((-joystick.getLeftX()) * (MaxSpeed/3)))
+=======
+        drive.withVelocityX(applyJoystickCurve(-joystick.getLeftY()) * (MaxSpeed/2))
+             .withVelocityY(applyJoystickCurve(-joystick.getLeftX()) * (MaxSpeed/2))
+>>>>>>> Stashed changes
              .withRotationalRate(applyJoystickCurve(-joystick.getRightX()) * MaxAngularRate*1.125)
     )
 );
